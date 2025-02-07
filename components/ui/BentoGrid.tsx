@@ -1,9 +1,12 @@
 // // //
 /* eslint-disable @next/next/no-img-element */
 
+"use client";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GridGlobe } from "./GridGlobe";
+import { useEffect, useState } from "react";
+import styles from "./BentoGrid.module.css";
 
 // https://ui.aceternity.com/components/bento-grid
 
@@ -50,6 +53,14 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareIm?: string;
 }) => {
+  // Logic to trigger continuous animation on image
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    // Start the animation when the component mounts
+    setStartAnimation(true);
+  }, []);
+
   return (
     <div
       className={cn(
@@ -63,21 +74,21 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6} && "flex justify-center h-full"`}>
-        <div className="w-full h-full absolute right-0">
+        <div className="w-full h-full absolute">
           {img && (
             <img
               src={img}
               alt={img}
-              className={
-                (cn(imgClassName),
-                `object-cover object-center ${id === 1 && "w-full h-full"} ${
-                  id === 5 && "right-0"
-                }`)
-              }
+              className={cn(
+                imgClassName,
+                "object-cover object-center",
+                id === 1 && "w-full h-full",
+                startAnimation ? `${styles.animateHoverEffect}` : "", // Trigger animation on mount
+                id === 5 && "right-0"
+              )}
             />
           )}
         </div>
-
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
@@ -93,13 +104,11 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-
         {id === 6 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 flex items-center justify-center text-white font-bold"></div>
           </BackgroundGradientAnimation>
         )}
-
         <div
           className={
             (cn(titleClassName),
@@ -109,18 +118,36 @@ export const BentoGridItem = ({
           <div className="font-extralight text-gray-400 text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-bold text-xl lg:text-2xl max-w-96 z-50">
+          <div className="font-bold text-xl lg:text-3xl max-w-96 z-50">
             {title}
           </div>
+
+          {id === 2 && <GridGlobe />}
+
+          {id === 3 && (
+            <div className="flex justify-start items-center w-full absolute">
+              <div className="flex flex-wrap justify-start items-center gap-4 mt-20 p-2">
+                {[
+                  { src: "/img/skill/tailwind.png", alt: "JavaScript" },
+                  { src: "/img/skill/js.webp", alt: "JavaScript" },
+                  { src: "/img/skill/ts.png", alt: "TypeScript" },
+                  { src: "/img/skill/react.png", alt: "React.js" },
+                  { src: "/img/skill/nextjs.jpeg", alt: "Next.js" },
+                  { src: "/img/skill/nodejs.png", alt: "Node.js" },
+                  { src: "/img/skill/express.webp", alt: "Express.js" },
+                  { src: "/img/skill/mongodb.svg", alt: "MongoDB" },
+                ].map((tech, index) => (
+                  <img
+                    key={index}
+                    src={tech.src}
+                    alt={tech.alt}
+                    className="w-12 md:w-[50px] lg:w-14 transition-transform duration-300 hover:scale-125"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-
-        {id === 2 && <GridGlobe />}
-
-        {id === 3 && (
-          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-            <div className="flex flex-col"></div>
-          </div>
-        )}
       </div>
     </div>
   );

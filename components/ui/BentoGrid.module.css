@@ -1,0 +1,18 @@
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.animateHoverEffect {
+  animation: hoverEffect 5s ease-out infinite; /* 3s duration, infinite loop */
+}
