@@ -6,3 +6,4 @@
 - run `npm i mini-svg-data-uri`
 - run `npm i tailwindcss-animate`
 - run `npm i next-themes`
+- run `npm i react-icons`

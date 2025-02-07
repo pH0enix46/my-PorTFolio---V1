@@ -2,7 +2,9 @@
 
 "use client";
 import React, { useState, useEffect } from "react";
-import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { TextGenerateEffect } from "../ui/TextGenerateEffect";
+import MagicButton from "../ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 export default function HeroDescription() {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,8 +24,8 @@ export default function HeroDescription() {
       </h2>
 
       <TextGenerateEffect
-        className="text-center text-[5vw] md:text-[4vw] lg:text-[3vw]"
-        words="Crafting Scalable and High-Performance Web Applications with the MERN Stack"
+        className="text-center text-[6vw] md:text-[4vw] lg:text-[3vw]"
+        words="Building Scalable and High-Performance Web Applications with the MERN Stack"
       />
 
       <p
@@ -46,6 +48,17 @@ export default function HeroDescription() {
         </span>{" "}
         Developer
       </p>
+
+      <a
+        href="#about"
+        className={`${isVisible ? "opacity-100" : "opacity-0"} mt-10`}
+      >
+        <MagicButton
+          title="Show my work"
+          icon={<FaLocationArrow />}
+          position="right"
+        />
+      </a>
     </div>
   );
 }
