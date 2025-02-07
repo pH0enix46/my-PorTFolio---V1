@@ -9,9 +9,10 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 min-h-[60vh] opacity-80",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/mdjoy.jpg",
@@ -19,7 +20,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I'm flexible with any time zone communications",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",

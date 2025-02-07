@@ -7,3 +7,4 @@
 - run `npm i tailwindcss-animate`
 - run `npm i next-themes`
 - run `npm i react-icons`
+- run `npm i three three-globe @react-three/fiber@alpha @react-three/drei`

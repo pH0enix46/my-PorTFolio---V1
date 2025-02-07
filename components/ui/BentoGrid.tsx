@@ -3,6 +3,7 @@
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
+import { GridGlobe } from "./GridGlobe";
 
 // https://ui.aceternity.com/components/bento-grid
 
@@ -52,7 +53,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border-2 border-transparent justify-between flex flex-col space-y-4 relative",
+        "row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none dark:bg-black dark:border-white/[0.2] overflow-hidden bg-white border-2 border-transparent justify-between flex flex-col space-y-4 relative",
         className
       )}
       style={{
@@ -67,7 +68,12 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={(cn(imgClassName), "object-cover object-center")}
+              className={
+                (cn(imgClassName),
+                `object-cover object-center ${id === 1 && "w-full h-full"} ${
+                  id === 5 && "right-0"
+                }`)
+              }
             />
           )}
         </div>
@@ -81,7 +87,9 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              className={"object-cover object-center w-full h-full"}
+              className={`object-cover object-center w-full h-full ${
+                id === 5 && "right-0"
+              }`}
             />
           )}
         </div>
@@ -101,10 +109,18 @@ export const BentoGridItem = ({
           <div className="font-extralight text-gray-400 text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-bold text-xl lg:text-3xl max-w-96 z-10">
+          <div className="font-bold text-xl lg:text-2xl max-w-96 z-50">
             {title}
           </div>
         </div>
+
+        {id === 2 && <GridGlobe />}
+
+        {id === 3 && (
+          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex flex-col"></div>
+          </div>
+        )}
       </div>
     </div>
   );
