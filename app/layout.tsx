@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Itim } from "next/font/google";
 import "./globals.css";
 
-// GOOGLE `ITIM` FONT ---------- ✅ ✅ ✅
+// Google `itim` font ---------- ✅ ✅ ✅
 const itim = Itim({
   variable: "--font-itim",
   subsets: ["latin"],
@@ -12,14 +12,14 @@ const itim = Itim({
 });
 // ---------- ⛔️ ⛔️ ⛔️
 
-// TITLE ---------- ✅ ✅ ✅
+// Title ---------- ✅ ✅ ✅
 export const metadata: Metadata = {
-  title: "pH0enix porTFolio",
+  title: "pH0enix46 porTFolio",
   description: "My first porTFolio, with some of my basic knowledge!",
 };
 // ---------- ⛔️ ⛔️ ⛔️
 
-// ROOT LAYOUT FUNCTION ---------- ✅ ✅ ✅
+// Root Layout function ---------- ✅ ✅ ✅
 export default function RootLayout({
   children,
 }: Readonly<{
