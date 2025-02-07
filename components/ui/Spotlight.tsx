@@ -4,6 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 // Aceternity UI (SPOTLIGHT) ---------- ✅ ✅ ✅
+// https://ui.aceternity.com/components/spotlight
 type SpotlightProps = {
   className?: string;
   fill?: string;

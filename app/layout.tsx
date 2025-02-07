@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import { Itim } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 // Google `itim` font ---------- ✅ ✅ ✅
 const itim = Itim({
@@ -27,7 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${itim.variable} antialiased`}>{children}</body>
+      <body className={`${itim.variable} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
