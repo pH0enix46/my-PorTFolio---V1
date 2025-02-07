@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+// https://ui.aceternity.com/components/text-generate-effect
+
+// TextGenerateEffect function ---------- ✅ ✅ ✅
 export const TextGenerateEffect = ({
   words,
   className,
@@ -64,3 +67,4 @@ export const TextGenerateEffect = ({
     </div>
   );
 };
+// ---------- ⛔️ ⛔️ ⛔️

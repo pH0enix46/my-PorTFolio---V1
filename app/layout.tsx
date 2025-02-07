@@ -3,7 +3,7 @@
 import type { Metadata } from "next";
 import { Itim } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 // Google `itim` font ---------- ✅ ✅ ✅
 const itim = Itim({

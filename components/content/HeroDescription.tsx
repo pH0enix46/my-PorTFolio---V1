@@ -6,6 +6,7 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import MagicButton from "../ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 
+// HeroDescription function ---------- ✅ ✅ ✅
 export default function HeroDescription() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -62,3 +63,4 @@ export default function HeroDescription() {
     </div>
   );
 }
+// ---------- ⛔️ ⛔️ ⛔️
