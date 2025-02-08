@@ -7,7 +7,7 @@ import { gridItems } from "@/data";
 // Grid function ---------- ✅ ✅ ✅
 export default function Grid() {
   return (
-    <section id="about">
+    <section id="contact">
       <BentoGrid>
         {gridItems.map(
           ({

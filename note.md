@@ -8,3 +8,5 @@
 - run `npm i next-themes`
 - run `npm i react-icons`
 - run `npm i three three-globe @react-three/fiber@alpha @react-three/drei`
+
+- run `npm i --legacy-peer-deps` forr all users

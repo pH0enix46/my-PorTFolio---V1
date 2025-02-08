@@ -51,7 +51,7 @@ export default function HeroDescription() {
       </p>
 
       <a
-        href="#about"
+        href="#projects"
         className={`${isVisible ? "opacity-100" : "opacity-0"} mt-10`}
       >
         <MagicButton

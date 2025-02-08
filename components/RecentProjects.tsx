@@ -9,13 +9,13 @@ import { FaLocationArrow } from "react-icons/fa";
 // Recent Project function ---------- ✅ ✅ ✅
 export default function RecentProjects() {
   return (
-    <div className="py-20 mt-10 md:mt-20">
+    <div className="py-20 mt-10 md:mt-20" id="projects">
       <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
         Here are some of my best projects that <br />
         <span className="text-purple">I&apos;m proud of!</span>
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 lg:mt-10 border-2 rounded-2xl shadow-xl shadow-gray-600">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 lg:mt-10 sm:border-2 sm:rounded-2xl sm:shadow-xl sm:shadow-gray-600 mt-2">
         {projects.map(({ id, title, des, img, iconLists, link }) => {
           return (
             <div
