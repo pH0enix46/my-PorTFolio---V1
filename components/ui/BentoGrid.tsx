@@ -2,8 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 
 "use client";
+
 import { cn } from "@/lib/utils";
-import { BackgroundGradientAnimation } from "./GradientBg";
 import { GridGlobe } from "./GridGlobe";
 import { useEffect, useState } from "react";
 import styles from "./BentoGrid.module.css";
@@ -21,7 +21,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-7xl mx-auto",
+        "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-7xl mx-auto",
         className
       )}
     >
@@ -51,7 +51,7 @@ export const BentoGridItem = ({
   img?: string;
   imgClassName?: string;
   titleClassName?: string;
-  spareIm?: string;
+  spareImg?: string;
 }) => {
   // Logic to trigger continuous animation on image
   const [startAnimation, setStartAnimation] = useState(false);
@@ -73,7 +73,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className={`${id === 6} && "flex justify-center h-full"`}>
+      <div>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -90,7 +90,7 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${
+          className={`absolute right-0 -bottom-1 ${
             id === 5 && "w-full opacity-80"
           }`}
         >
@@ -99,30 +99,96 @@ export const BentoGridItem = ({
               src={spareImg}
               alt={spareImg}
               className={`object-cover object-center w-full h-full ${
-                id === 5 && "right-0"
+                id === 4 && "right-0"
               }`}
             />
           )}
         </div>
-        {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold"></div>
-          </BackgroundGradientAnimation>
-        )}
+
         <div
           className={
             (cn(titleClassName),
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10")
           }
         >
-          <div className="font-extralight text-gray-400 text-sm md:text-xs lg:text-base z-10">
+          <div className="font-extralight text-gray-500 text-sm md:text-xs lg:text-lg z-10 uppercase">
             {description}
           </div>
-          <div className="font-bold text-xl lg:text-3xl max-w-96 z-50">
+          <div className="font-bold text-xl lg:text-2xl max-w-96 z-50">
             {title}
           </div>
 
           {id === 2 && <GridGlobe />}
+
+          {id === 4 && (
+            <div>
+              <ul className="flex flex-wrap justify-center mt-10 gap-6">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/mdjoy46/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/img/social_media/linkedin.png"
+                      alt="LinkedIn"
+                      className="w-12 h-12 transition-transform transform hover:scale-125"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://github.com/pH0enix46"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/img/social_media/github.png"
+                      alt="GitHub"
+                      className="w-12 h-12 transition-transform transform hover:scale-125"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:mdjoy.javascript@gmail.com">
+                    <img
+                      src="/img/social_media/gmail.webp"
+                      alt="Email"
+                      className="w-12 h-12 transition-transform transform hover:scale-125"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/img/social_media/RESUME.pdf"
+                    download="MD_JOY--resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 flex justify-center items-center bg-gray-200 rounded-full shadow-md hover:shadow-lg transition-all"
+                  >
+                    <img
+                      src="/img/social_media/resume.png"
+                      alt="Resume"
+                      className="w-12 h-12 transition-transform transform hover:scale-125"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="tel:+8801832865677">
+                    <img
+                      src="/img/social_media/phone.webp"
+                      alt="Phone"
+                      className="w-12 h-12 transition-transform transform hover:scale-125"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )}
 
           {id === 3 && (
             <div className="flex justify-start items-center w-full absolute">
@@ -141,7 +207,7 @@ export const BentoGridItem = ({
                     key={index}
                     src={tech.src}
                     alt={tech.alt}
-                    className="w-12 md:w-[50px] lg:w-14 transition-transform duration-300 hover:scale-125"
+                    className="w-[52px] md:w-[50px] lg:w-14 transition-transform duration-300 hover:scale-125"
                   />
                 ))}
               </div>
