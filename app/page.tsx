@@ -2,6 +2,7 @@
 
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Motivation from "@/components/Motivation";
@@ -32,6 +33,7 @@ export default function Home() {
           <div className="relative z-10">
             <Experience />
             <AboutMe />
+            <Footer />
           </div>
         </div>
       </div>

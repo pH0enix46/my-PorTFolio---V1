@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import React, {
   createContext,
   useState,
@@ -10,6 +9,9 @@ import React, {
   useEffect,
 } from "react";
 
+// https://ui.aceternity.com/components/3d-card-effect
+
+// 3D Card function ---------- ✅ ✅ ✅
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
@@ -153,3 +155,4 @@ export const useMouseEnter = () => {
   }
   return context;
 };
+// ---------- ⛔️ ⛔️ ⛔️
