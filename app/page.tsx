@@ -1,5 +1,6 @@
 // // //
 
+import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Motivation from "@/components/Motivation";
@@ -17,6 +18,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Motivation />
+        <Experience />
       </div>
     </main>
   );
