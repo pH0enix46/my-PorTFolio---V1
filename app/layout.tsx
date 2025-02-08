@@ -28,6 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/fav.png"
+        />
+      </head>
       <body className={`${itim.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
