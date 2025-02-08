@@ -1,5 +1,6 @@
 // // //
 
+import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
@@ -18,7 +19,21 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Motivation />
-        <Experience />
+
+        <div className="relative w-full">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-50 transition-opacity duration-500 ease-in-out z-0"
+            src="/video/bg.mp4"
+            autoPlay
+            loop
+            muted
+          />
+
+          <div className="relative z-10">
+            <Experience />
+            <AboutMe />
+          </div>
+        </div>
       </div>
     </main>
   );

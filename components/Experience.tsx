@@ -10,13 +10,13 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 export default function Experience() {
   return (
     <section className="py-20 mt-10 md:mt-20 w-full relative">
-      <video
+      {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover opacity-50 transition-opacity duration-500 ease-in-out"
         src="/video/bg.mp4"
         autoPlay
         loop
         muted
-      />
+      /> */}
 
       <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-center relative z-10 opacity-100">
         My current <span className="text-purple">Position!</span>
