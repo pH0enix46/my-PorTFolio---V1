@@ -20,21 +20,23 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Motivation />
+      </div>
 
-        <div className="relative w-full">
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-50 transition-opacity duration-500 ease-in-out z-0"
-            src="/video/bg.mp4"
-            autoPlay
-            loop
-            muted
-          />
+      <div className="relative w-screen">
+        <video
+          className="absolute top-0 left-0 w-screen h-full object-cover opacity-50 transition-opacity duration-500 ease-in-out z-0"
+          src="/video/bg.mp4"
+          autoPlay
+          loop
+          muted
+        />
 
-          <div className="relative z-10">
+        <div className="relative z-10">
+          <div className="p-4">
             <Experience />
             <AboutMe />
-            <Footer />
           </div>
+          <Footer />
         </div>
       </div>
     </main>
