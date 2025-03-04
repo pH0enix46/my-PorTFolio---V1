@@ -164,7 +164,7 @@ export const BentoGridItem = ({
                 <li>
                   <a
                     href="/img/social_media/RESUME.pdf"
-                    download="MD_JOY--resume.pdf"
+                    download="JOY_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 flex justify-center items-center bg-gray-200 rounded-full shadow-md hover:shadow-lg transition-all"
