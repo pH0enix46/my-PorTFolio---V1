@@ -109,6 +109,19 @@ export const projects = [
     iconLists: ["/img/skill/js.webp", "/img/skill/sass.png"],
     link: "https://github.com/pH0enix46/Forkify-App---JAVASCRIPT",
   },
+
+  {
+    id: 5,
+    title: "3D Solar System",
+    des: "This project was originally created by Julian Garnier in 2012 under the MIT License. I converted it to Next.js in 2025, also under the MIT License",
+    img: "/img/my-project/3d-solar-system.png",
+    iconLists: [
+      "/img/skill/js.webp",
+      "/img/skill/nextjs.jpeg",
+      "/img/skill/react.png",
+    ],
+    link: "https://github.com/pH0enix46/3D-Solar-System---NEXT.JS?tab=readme-ov-file",
+  },
 ];
 
 export const testimonials = [
