@@ -26,7 +26,7 @@ export default function Experience() {
         <Card
           title="Fresher"
           icon={<AceternityIcon btnCheck="Check here!" />}
-          description="I'm new to professional work but have been dedicating a lot of time to learn and build MERN stack projects. I'm truly passionate about coding and excited to continue growing and applying my skills in a real-world scenarios"
+          description="I'm new to professional work but have been dedicating a lot of time to learn and build REACT, NEXT.JS & SUPABASE projects. I'm truly passionate about coding and excited to continue growing and applying my skills in a real-world scenarios"
         >
           <CanvasRevealEffect
             animationSpeed={3.0}

@@ -30,7 +30,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Programming Languages",
+    title: "My Tools",
     description: "I'm constantly trying to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[36vh]",
     imgClassName: "",
@@ -52,7 +52,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "I'm currently focusing on my university project, while also finishing up my Next.js course on Udemy",
+      "I'd love to work under someone experienced, to learn hands-on, and to grow faster through real collaboration",
     description: "Upcoming Goals",
     className: "md:col-span-3 md:row-span-2 min-h-[34vh]",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -65,6 +65,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "The Wild Oasis -Admin Panel",
+    des: "This project focuses on React Query, Styled Components, React Hook Form, Supabase, advanced compound component patterns. It also includes authentication, dynamic charts, dark mode",
+    img: "/img/my-project/wild-oasis-react.png",
+    iconLists: [
+      "/img/skill/react.png",
+      "/img/skill/tailwind.png",
+      "/img/skill/js.webp",
+      "/img/skill/supabase.jpeg",
+      "/img/skill/styled-component.png",
+    ],
+    link: "https://github.com/pH0enix46/The-Wild-Oasis---REACT",
+  },
+  {
+    id: 2,
+    title: "The Wild Oasis -WEB APP",
+    des: "This project focuses on Next.js `app` router, React Server Components, server actions, authentication with NextAuth, Google signin system and many more",
+    img: "/img/my-project/wild-oasis-next.png",
+    iconLists: [
+      "/img/skill/nextjs.jpeg",
+      "/img/skill/react.png",
+      "/img/skill/auth.png",
+      "/img/skill/tailwind.png",
+      "/img/skill/js.webp",
+      "/img/skill/supabase.jpeg",
+    ],
+    link: "https://github.com/pH0enix46/The-Wild-Oasis---NEXT.JS",
+  },
+  {
+    id: 3,
     title: "My university final year project",
     des: "Created an eCommerce platform for computer products, built with MERN stack, offering a smooth and interactive shopping experience",
     img: "/img/my-project/varsity.png",
@@ -79,7 +108,7 @@ export const projects = [
     link: "https://github.com/pH0enix46/Final-year-project---UNIVERSITY",
   },
   {
-    id: 2,
+    id: 4,
     title: "Natours Tours Guide",
     des: "Developed a secure, dynamic tour booking system with JWT authentication, login/logout functionality, Stripe payment integration, and user-specific access control",
     img: "/img/my-project/natours.png",
@@ -94,7 +123,7 @@ export const projects = [
     link: "https://github.com/pH0enix46/Natours-Website---NODE-EXPRESS-MONGODB",
   },
   {
-    id: 3,
+    id: 5,
     title: "Bankist App",
     des: "Developed a secure platform allowing users to log in, transfer money, take loans, and manage deposits and withdrawals, with sorting logic for easy transaction tracking",
     img: "/img/my-project/bankist.png",
@@ -102,16 +131,7 @@ export const projects = [
     link: "https://github.com/pH0enix46/Bankist-App---JAVASCRIPT",
   },
   {
-    id: 4,
-    title: "Forkify App",
-    des: "This project allows users to search for their favorite recipes, visit the associated restaurants, and bookmark their top recipes to easily access and add their favorites recipe",
-    img: "/img/my-project/forkify.png",
-    iconLists: ["/img/skill/js.webp", "/img/skill/sass.png"],
-    link: "https://github.com/pH0enix46/Forkify-App---JAVASCRIPT",
-  },
-
-  {
-    id: 5,
+    id: 6,
     title: "3D Solar System",
     des: "This project was originally created by Julian Garnier in 2012 under the MIT License. I converted it to Next.js in 2025, also under the MIT License",
     img: "/img/my-project/3d-solar-system.png",

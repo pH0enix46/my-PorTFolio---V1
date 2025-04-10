@@ -202,12 +202,13 @@ export const BentoGridItem = ({
                   { src: "/img/skill/nodejs.png", alt: "Node.js" },
                   { src: "/img/skill/express.webp", alt: "Express.js" },
                   { src: "/img/skill/mongodb.svg", alt: "MongoDB" },
+                  { src: "/img/skill/supabase.jpeg", alt: "MongoDB" },
                 ].map((tech, index) => (
                   <img
                     key={index}
                     src={tech.src}
                     alt={tech.alt}
-                    className="w-[52px] md:w-[50px] lg:w-14 transition-transform duration-300 hover:scale-125"
+                    className="w-[52px] md:w-[50px] lg:w-14 transition-transform duration-300 hover:scale-125 rounded-full"
                   />
                 ))}
               </div>

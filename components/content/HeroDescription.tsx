@@ -26,7 +26,7 @@ export default function HeroDescription() {
 
       <TextGenerateEffect
         className="text-center text-[6vw] md:text-[4vw] lg:text-[3vw]"
-        words="Building Scalable and High-Performance Web Applications with the MERN Stack"
+        words="Building Scalable and High-Performance Web Applications with NEXT.JS & SUPABASE"
       />
 
       <p
@@ -35,7 +35,7 @@ export default function HeroDescription() {
         } pt-6 md:pt-10 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-center transition-opacity ease-in-out duration-1000`}
       >
         Hello! I&apos;m Md Joy, a passionate Full-Stack{" "}
-        <span className="text-green-700 font-bold text-base md:text-xl lg:text-3xl underline">
+        {/* <span className="text-green-700 font-bold text-base md:text-xl lg:text-3xl underline">
           M
         </span>
         <span className="text-gray-500 font-bold text-base md:text-xl lg:text-3xl underline">
@@ -46,6 +46,9 @@ export default function HeroDescription() {
         </span>
         <span className="text-green-600 font-bold text-base md:text-xl lg:text-3xl underline">
           N
+        </span>{" "} */}
+        <span className="font-bold text-gray-500 text-base md:text-xl lg:text-4xl">
+          NEXT.JS
         </span>{" "}
         Developer
       </p>

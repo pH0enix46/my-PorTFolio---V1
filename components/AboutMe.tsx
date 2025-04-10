@@ -24,11 +24,11 @@ export default function AboutMe() {
             translateZ="60"
             className="text-neutral-500 text-base sm:text-xl max-w-sm mt-2 dark:text-gray-300 font-bold text-center sm:text-justify"
           >
-            I&apos;m a web developer with a solid foundation in MERN Stack
-            development. Currently, I&apos;m focusing on DSA and solving
-            LeetCode & HackerRank challenges. I believe in clean and efficient
-            code. My toolbox is filled with languages and frameworks. Thanks to
-            my teacher 💕
+            I&apos;m a web developer with a solid foundation in Full stack
+            NEXT.JS, REACT & SUPABASE. Currently, I&apos;m focusing
+            on DSA and solving LeetCode challenges. I believe in
+            clean and efficient code. My toolbox is filled with languages and
+            frameworks. Thanks to my teacher 💕
             <a
               href="https://jonas.io/index.html"
               className="text-2xl text-purple"
@@ -40,23 +40,14 @@ export default function AboutMe() {
           </CardItem>
           <CardItem translateZ="100" className="w-full mt-4">
             <Image
-              src="/js-gifs.gif"
+              src="/pH0enix--LIFE.png"
               height="1000"
               width="1000"
-              className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+              className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl border-2 border-gray-500"
               alt="thumbnail"
-              unoptimized
             />
           </CardItem>
-          <div className="flex justify-between items-center mt-10">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-gray-400 text-center"
-            >
-              💞 Coding is my passion. No matter what position I&apos;m in,
-              I&apos;ll always code 💞
-            </CardItem>
-          </div>
+       
         </CardBody>
       </CardContainer>
     </div>
