@@ -22,6 +22,8 @@ export default function Home() {
       </div>
 
       <div className="relative w-screen">
+        <div className="absolute inset-0 bg-black opacity-30 z-10" />
+
         <video
           className="absolute top-0 left-0 w-screen h-full object-cover opacity-50 transition-opacity duration-500 ease-in-out z-0"
           src="/video/bg.mp4"

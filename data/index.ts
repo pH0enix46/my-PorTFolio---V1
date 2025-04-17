@@ -75,7 +75,7 @@ export const projects = [
       "/img/skill/supabase.jpeg",
       "/img/skill/styled-component.png",
     ],
-    link: "https://github.com/pH0enix46/The-Wild-Oasis---REACT",
+    link: "https://github.com/pH0enix46/The-Wild-Oasis--Modern-ADMIN-PANEL---REACT",
   },
   {
     id: 2,
@@ -90,7 +90,7 @@ export const projects = [
       "/img/skill/js.webp",
       "/img/skill/supabase.jpeg",
     ],
-    link: "https://github.com/pH0enix46/The-Wild-Oasis---NEXT.JS",
+    link: "https://github.com/pH0enix46/The-Wild-Oasis--Modern-WEB-APP---NEXT.JS",
   },
   {
     id: 3,
