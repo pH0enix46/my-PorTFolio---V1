@@ -26,7 +26,7 @@ export default function HeroDescription() {
 
       <TextGenerateEffect
         className="text-center text-[6vw] md:text-[4vw] lg:text-[3vw]"
-        words="Building Scalable and High-Performance Web Applications with NEXT.JS & SUPABASE"
+        words="Building Scalable and High-Performance Web Applications with REACT, NEXT.JS & SUPABASE"
       />
 
       <p

@@ -8,7 +8,7 @@ import { testimonials } from "@/data";
 export default function Motivation() {
   return (
     <div className="sm:py-20 md:mt-20">
-      <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
+      <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
         Some of the Visionaries <br />
         <span className="text-purple">Who Inspire My Coding Journey!</span>
       </h1>

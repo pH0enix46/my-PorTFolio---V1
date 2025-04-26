@@ -24,9 +24,9 @@ export default function Experience() {
 
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-2">
         <Card
-          title="Fresher"
+          title="Software Engineer"
           icon={<AceternityIcon btnCheck="Check here!" />}
-          description="I'm new to professional work but have been dedicating a lot of time to learn and build REACT, NEXT.JS & SUPABASE projects. I'm truly passionate about coding and excited to continue growing and applying my skills in a real-world scenarios"
+          description="I'm currently working as a Frontend Developer Intern at Aimsbay in Dhaka. My focus is on building modern, responsive UIs using React, Next.js and Supabase. I'm also involved in UI/UX improvements and collaborating closely with the team. Thanks! Samiul Islam Vai, for giving me this opportunity"
         >
           <CanvasRevealEffect
             animationSpeed={3.0}
@@ -54,7 +54,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border-2 border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] w-full max-w-lg mx-auto p-4 relative h-[26rem] md:h-[35rem] rounded-3xl shadow-lg shadow-gray-500"
+      className="border-2 border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] w-full max-w-lg mx-auto p-4 relative md:h-[35rem] rounded-3xl shadow-lg shadow-gray-500 h-full"
     >
       <Icon className="absolute h-16 w-16 -top-6 dark:text-white text-black opacity-30 -left-6" />
       <Icon className="absolute h-16 w-16 -bottom-6 -left-6 dark:text-white text-black opacity-30" />
@@ -77,7 +77,7 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           {icon}
         </div>
-        <h2 className="dark:text-white text-4xl sm:text-5xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold text-center group-hover/canvas-card:text-pink-400 group-hover/canvas-card:-translate-y-2 transition duration-200 uppercase">
+        <h2 className="dark:text-white text-3xl sm:text-5xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold text-center group-hover/canvas-card:text-pink-400 group-hover/canvas-card:-translate-y-2 transition duration-200 uppercase">
           {title}
         </h2>
         <h2 className="dark:text-white text-2xl sm:text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold text-center group-hover/canvas-card:text-amber-300 group-hover/canvas-card:-translate-y-2 transition duration-200">
