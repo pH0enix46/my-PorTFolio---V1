@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { GridGlobe } from "./GridGlobe";
 import { useEffect, useState } from "react";
 import styles from "./BentoGrid.module.css";
+import Image from "next/image";
 
 // https://ui.aceternity.com/components/bento-grid
 
@@ -76,17 +77,21 @@ export const BentoGridItem = ({
       <div>
         <div className="w-full h-full absolute">
           {img && (
-            <img
-              src={img}
-              alt={img}
-              className={cn(
-                imgClassName,
-                "object-cover object-center",
-                id === 1 && "w-full h-full",
-                startAnimation ? `${styles.animateHoverEffect}` : "", // Trigger animation on mount
-                id === 5 && "right-0"
-              )}
-            />
+            <div>
+              <Image
+                src={img}
+                alt={img}
+                fill
+                quality={90}
+                className={cn(
+                  imgClassName,
+                  "object-cover object-center",
+                  id === 1 && "w-full h-full",
+                  startAnimation ? `${styles.animateHoverEffect}` : "", // Trigger animation on mount
+                  id === 5 && "right-0"
+                )}
+              />
+            </div>
           )}
         </div>
         <div
@@ -111,10 +116,10 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-7")
           }
         >
-          <div className="font-extralight text-gray-500 text-sm md:text-xs lg:text-lg z-10 uppercase">
+          <div className="text-gray-500 text-sm md:text-xs lg:text-lg z-10 uppercase font-bold">
             {description}
           </div>
-          <div className="font-bold text-xl lg:text-2xl max-w-96 z-50">
+          <div className="font-bold text-xl text-sky-200/90 lg:text-2xl max-w-96 z-50">
             {title}
           </div>
 
@@ -161,7 +166,8 @@ export const BentoGridItem = ({
                   </a>
                 </li>
 
-                <li>
+                {/* no need resume */}
+                {/* <li>
                   <a
                     href="/img/social_media/RESUME.pdf"
                     download="JOY_Resume.pdf"
@@ -175,7 +181,7 @@ export const BentoGridItem = ({
                       className="w-12 h-12 transition-transform transform hover:scale-125"
                     />
                   </a>
-                </li>
+                </li> */}
 
                 <li>
                   <a href="tel:+8801832865677">
