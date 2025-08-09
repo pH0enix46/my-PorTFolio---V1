@@ -26,7 +26,7 @@ export default function Experience() {
         <Card
           title="Software Engineer"
           icon={<AceternityIcon btnCheck="Check here!" />}
-          description="I'm currently working as a Frontend Developer Intern at Aimsbay in Dhaka. My focus is on building modern, responsive UIs using React, Next.js and Supabase. I'm also involved in UI/UX improvements and collaborating closely with the team. Thanks! Samiul Islam Vai, for giving me this opportunity"
+          description="I’m currently working as a Junior Software Developer at Rapid Smart ERP, a Dubai-based multinational ERP software company, in a full-time role. Alongside this, I’m also working part-time at Aimsbay in Dhaka, focusing on building modern, responsive UIs using React, Next.js, and Supabase. A special thanks to Samiul Islam Vai for giving me the opportunity to be part of both Rapid Smart ERP and Aimsbay"
         >
           <CanvasRevealEffect
             animationSpeed={3.0}
